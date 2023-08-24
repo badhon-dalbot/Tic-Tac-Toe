@@ -88,6 +88,10 @@ public class TicTacToe implements ActionListener {
             textField.setText("X wins");
             endGame();
         }
+        else if((buttons[2].getLabel() == "X") && (buttons[4].getLabel() == "X") && (buttons[6].getLabel()=="X")){
+            textField.setText("X wins");
+            endGame();
+        }
 
         else if((buttons[0].getLabel() == "O") && (buttons[1].getLabel() == "O") && (buttons[2].getLabel()=="O")){
             textField.setText("O wins");
@@ -110,6 +114,10 @@ public class TicTacToe implements ActionListener {
             endGame();
         }
         else if((buttons[2].getLabel() == "O") && (buttons[5].getLabel() == "O") && (buttons[8].getLabel()=="O")){
+            textField.setText("O wins");
+            endGame();
+        }
+         else if((buttons[2].getLabel() == "O") && (buttons[4].getLabel() == "O") && (buttons[6].getLabel()=="O")){
             textField.setText("O wins");
             endGame();
         }
